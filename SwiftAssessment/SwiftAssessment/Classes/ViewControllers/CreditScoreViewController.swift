@@ -18,11 +18,6 @@ final class CreditScoreViewController: UIViewController
 	}
 	
 	@IBOutlet private weak var donutView: DonutView!
-	{
-		didSet {
-			//tableView.delegate = self
-		}
-	}
 	
 	var creditScoreService: CreditScoreService!
 	
@@ -56,17 +51,33 @@ final class CreditScoreViewController: UIViewController
 		{
 			[weak self]
 			result in
-				print("Result: \(result)")
+				self?.activityIndicator.stopAnimating()
+			
 				guard let value = result.value else
 				{
-					// TODO: Handle errors
+					self?.displayError(error: result.error)
 					return
 				}
 			
 				self?.donutView.currentScore = value.score
 				self?.donutView.maxScore = value.maxScore
-			
-				self?.activityIndicator.stopAnimating()
 		}
+	}
+	
+	// TODO: Ideally we'd check the error and give guidance on what the user should do next
+	// Also I'd rather have a dismiss button, with a retry button somewhere in the interface to trigger a retry without the endless alerts
+	private func displayError(error: Error?)
+	{
+		let alertController = UIAlertController(title: "dashboard.error.title".localized, message: "dashboard.error.description".localized, preferredStyle: .alert)
+		let retry = UIAlertAction(title: "dashboard.error.actions.retry".localized, style: .default)
+		{
+			[weak self]
+			action in
+				self?.updateCreditScore();
+		}
+		
+		alertController.addAction(retry)
+		
+		present(alertController, animated: true, completion: nil)
 	}
 }

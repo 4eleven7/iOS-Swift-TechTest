@@ -12,6 +12,12 @@
 "dashboard.donut.score.current" = "%i";
 "dashboard.donut.score.max" = "out of %i";
 
+
+"dashboard.error.title" = "Unable to load credit score";
+"dashboard.error.description" = "Check your network connection and try again";
+"dashboard.error.actions.dimiss" = "Dismiss";
+"dashboard.error.actions.retry" = "Retry";
+
 "error.service.invalid.url" = "Service call failed due to an invalid URL";
 "error.service.invalid.json" = "Service returned invalid JSON response";
 "error.service.unknown" = "Service returned an unknown error";
