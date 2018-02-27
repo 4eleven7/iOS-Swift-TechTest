@@ -5,3 +5,7 @@
   Created by Dan Love on 27/02/2018.
   Copyright © 2018 Shh Love Ltd. All rights reserved.
 */
+
+"error.service.invalid.url" = "Service call failed due to an invalid URL";
+"error.service.invalid.json" = "Service returned invalid JSON response";
+"error.service.unknown" = "Service returned an unknown error";
