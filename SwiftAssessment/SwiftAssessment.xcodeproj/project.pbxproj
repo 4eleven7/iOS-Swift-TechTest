@@ -23,6 +23,7 @@
 		79047A9820456E86006ECEFA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A9320456E86006ECEFA /* APIRequest.swift */; };
 		79047A9920456E86006ECEFA /* CreditScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A9420456E86006ECEFA /* CreditScoreService.swift */; };
 		79047A9F20457123006ECEFA /* CreditScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A9E20457123006ECEFA /* CreditScoreViewController.swift */; };
+		79047AA2204573C9006ECEFA /* DonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047AA1204573C9006ECEFA /* DonutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		79047A9320456E86006ECEFA /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		79047A9420456E86006ECEFA /* CreditScoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScoreService.swift; sourceTree = "<group>"; };
 		79047A9E20457123006ECEFA /* CreditScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScoreViewController.swift; sourceTree = "<group>"; };
+		79047AA1204573C9006ECEFA /* DonutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				79047A8B20456E7E006ECEFA /* Extensions */,
 				79047A8620456DCB006ECEFA /* Model */,
 				79047A8E20456E86006ECEFA /* Service */,
+				79047AA0204573C3006ECEFA /* Views */,
 				79047A9D20457123006ECEFA /* ViewControllers */,
 			);
 			path = Classes;
@@ -172,6 +175,14 @@
 				79047A9E20457123006ECEFA /* CreditScoreViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79047AA0204573C3006ECEFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79047AA1204573C9006ECEFA /* DonutView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +294,7 @@
 				79047A9920456E86006ECEFA /* CreditScoreService.swift in Sources */,
 				79047A9520456E86006ECEFA /* Result.swift in Sources */,
 				79047A9620456E86006ECEFA /* Network.swift in Sources */,
+				79047AA2204573C9006ECEFA /* DonutView.swift in Sources */,
 				79047A9F20457123006ECEFA /* CreditScoreViewController.swift in Sources */,
 				79047A5E20456CBA006ECEFA /* AppDelegate.swift in Sources */,
 				79047A8820456DCB006ECEFA /* CreditScore.swift in Sources */,

@@ -6,6 +6,12 @@
   Copyright © 2018 Shh Love Ltd. All rights reserved.
 */
 
+"dashboard.title" = "Dashboard";
+
+"dashboard.donut.title" = "Your credit score is";
+"dashboard.donut.score.current" = "%i";
+"dashboard.donut.score.max" = "out of %i";
+
 "error.service.invalid.url" = "Service call failed due to an invalid URL";
 "error.service.invalid.json" = "Service returned invalid JSON response";
 "error.service.unknown" = "Service returned an unknown error";

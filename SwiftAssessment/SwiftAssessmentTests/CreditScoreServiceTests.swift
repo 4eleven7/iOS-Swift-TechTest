@@ -60,7 +60,7 @@ class MockNetwork: Network
 	func call<Endpoint: APIEndpoint>(_ api: Endpoint, completion: @escaping (_ response: Result<Endpoint.ResponseType>) -> Void)
 	{
 		guard failure == false else {
-			return completion(.failure(ServiceErrors.generalError(err: nil)))
+			return completion(.failure(ServiceError.generalError(err: nil)))
 		}
 		
 		let bundle = Bundle(for: type(of: self))
