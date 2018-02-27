@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		79047A5E20456CBA006ECEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A5D20456CBA006ECEFA /* AppDelegate.swift */; };
-		79047A6020456CBA006ECEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A5F20456CBA006ECEFA /* ViewController.swift */; };
 		79047A6320456CBA006ECEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79047A6120456CBA006ECEFA /* Main.storyboard */; };
 		79047A6520456CBA006ECEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79047A6420456CBA006ECEFA /* Assets.xcassets */; };
 		79047A6820456CBA006ECEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79047A6620456CBA006ECEFA /* LaunchScreen.storyboard */; };
-		79047A7320456CBB006ECEFA /* SwiftAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A7220456CBB006ECEFA /* SwiftAssessmentTests.swift */; };
+		79047A7E20456D1B006ECEFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79047A7D20456D1B006ECEFA /* Localizable.strings */; };
+		79047A8120456D21006ECEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A8020456D21006ECEFA /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		79047A5A20456CBA006ECEFA /* SwiftAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79047A5D20456CBA006ECEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79047A5F20456CBA006ECEFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79047A6220456CBA006ECEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79047A6420456CBA006ECEFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79047A6720456CBA006ECEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79047A6920456CBA006ECEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79047A6E20456CBB006ECEFA /* SwiftAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79047A7220456CBB006ECEFA /* SwiftAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAssessmentTests.swift; sourceTree = "<group>"; };
 		79047A7420456CBB006ECEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79047A7D20456D1B006ECEFA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		79047A8020456D21006ECEFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,12 @@
 		79047A5C20456CBA006ECEFA /* SwiftAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				79047A7F20456D21006ECEFA /* Classes */,
 				79047A5D20456CBA006ECEFA /* AppDelegate.swift */,
-				79047A5F20456CBA006ECEFA /* ViewController.swift */,
 				79047A6120456CBA006ECEFA /* Main.storyboard */,
 				79047A6420456CBA006ECEFA /* Assets.xcassets */,
 				79047A6620456CBA006ECEFA /* LaunchScreen.storyboard */,
+				79047A7D20456D1B006ECEFA /* Localizable.strings */,
 				79047A6920456CBA006ECEFA /* Info.plist */,
 			);
 			path = SwiftAssessment;
@@ -90,10 +91,17 @@
 		79047A7120456CBB006ECEFA /* SwiftAssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				79047A7220456CBB006ECEFA /* SwiftAssessmentTests.swift */,
 				79047A7420456CBB006ECEFA /* Info.plist */,
 			);
 			path = SwiftAssessmentTests;
+			sourceTree = "<group>";
+		};
+		79047A7F20456D21006ECEFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79047A8020456D21006ECEFA /* ViewController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79047A6820456CBA006ECEFA /* LaunchScreen.storyboard in Resources */,
+				79047A7E20456D1B006ECEFA /* Localizable.strings in Resources */,
 				79047A6520456CBA006ECEFA /* Assets.xcassets in Resources */,
 				79047A6320456CBA006ECEFA /* Main.storyboard in Resources */,
 			);
@@ -199,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79047A6020456CBA006ECEFA /* ViewController.swift in Sources */,
+				79047A8120456D21006ECEFA /* ViewController.swift in Sources */,
 				79047A5E20456CBA006ECEFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +217,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79047A7320456CBB006ECEFA /* SwiftAssessmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
