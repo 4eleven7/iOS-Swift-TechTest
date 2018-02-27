@@ -13,6 +13,9 @@
 		79047A6820456CBA006ECEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79047A6620456CBA006ECEFA /* LaunchScreen.storyboard */; };
 		79047A7E20456D1B006ECEFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79047A7D20456D1B006ECEFA /* Localizable.strings */; };
 		79047A8120456D21006ECEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A8020456D21006ECEFA /* ViewController.swift */; };
+		79047A8420456DA8006ECEFA /* creditscorevalues.json in Resources */ = {isa = PBXBuildFile; fileRef = 79047A8220456DA8006ECEFA /* creditscorevalues.json */; };
+		79047A8520456DA8006ECEFA /* CreditScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A8320456DA8006ECEFA /* CreditScoreTests.swift */; };
+		79047A8820456DCB006ECEFA /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79047A8720456DCB006ECEFA /* CreditScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		79047A7420456CBB006ECEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79047A7D20456D1B006ECEFA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		79047A8020456D21006ECEFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79047A8220456DA8006ECEFA /* creditscorevalues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = creditscorevalues.json; sourceTree = "<group>"; };
+		79047A8320456DA8006ECEFA /* CreditScoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScoreTests.swift; sourceTree = "<group>"; };
+		79047A8720456DCB006ECEFA /* CreditScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				79047A7420456CBB006ECEFA /* Info.plist */,
+				79047A8220456DA8006ECEFA /* creditscorevalues.json */,
+				79047A8320456DA8006ECEFA /* CreditScoreTests.swift */,
 			);
 			path = SwiftAssessmentTests;
 			sourceTree = "<group>";
@@ -99,9 +107,18 @@
 		79047A7F20456D21006ECEFA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				79047A8620456DCB006ECEFA /* Model */,
 				79047A8020456D21006ECEFA /* ViewController.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		79047A8620456DCB006ECEFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79047A8720456DCB006ECEFA /* CreditScore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +175,7 @@
 					};
 					79047A6D20456CBB006ECEFA = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 79047A5920456CBA006ECEFA;
 					};
@@ -198,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79047A8420456DA8006ECEFA /* creditscorevalues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +229,7 @@
 			files = (
 				79047A8120456D21006ECEFA /* ViewController.swift in Sources */,
 				79047A5E20456CBA006ECEFA /* AppDelegate.swift in Sources */,
+				79047A8820456DCB006ECEFA /* CreditScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79047A8520456DA8006ECEFA /* CreditScoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,12 +413,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3QHQCFR8B;
 				INFOPLIST_FILE = SwiftAssessmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shhlove.SwiftAssessmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAssessment.app/SwiftAssessment";
@@ -409,6 +432,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3QHQCFR8B;
 				INFOPLIST_FILE = SwiftAssessmentTests/Info.plist;
